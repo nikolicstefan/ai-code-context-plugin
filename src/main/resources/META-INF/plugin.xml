@@ -1,0 +1,13 @@
+<idea-plugin>
+    <id>com.nikolicstefan.aicodecontext.AiCodeContextPlugin</id>
+
+    <name>AI Code Context</name>
+
+    <vendor email="nikolicstefan0@outlook.com">Stefan Nikolic</vendor>
+
+    <description>
+        Minimal IntelliJ IDEA plugin for building AI prompts from selected code context.
+    </description>
+
+    <depends>com.intellij.modules.platform</depends>
+</idea-plugin>

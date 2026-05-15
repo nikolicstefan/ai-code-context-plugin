@@ -10,4 +10,17 @@
     </description>
 
     <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <notificationGroup displayType="BALLOON" id="AiCodeContextNotifications"/>
+    </extensions>
+
+    <actions>
+        <action class="com.nikolicstefan.aicodecontext.BuildPromptFromSelectionAction"
+                id="com.nikolicstefan.aicodecontext.BuildPromptFromSelectionAction"
+                text="Build AI Prompt from Selection"
+                description="Build an AI prompt from selected code and copy it to clipboard">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+    </actions>
 </idea-plugin>

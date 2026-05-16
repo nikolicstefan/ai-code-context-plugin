@@ -6,7 +6,8 @@
     <vendor email="nikolicstefan0@outlook.com">Stefan Nikolic</vendor>
 
     <description>
-        Minimal IntelliJ IDEA plugin for building AI prompts from selected code context.
+        Minimal IntelliJ IDEA plugin for building AI prompts from selected code context
+        and sending them to a local Ollama model.
     </description>
 
     <depends>com.intellij.modules.platform</depends>
@@ -20,6 +21,14 @@
                 id="com.nikolicstefan.aicodecontext.BuildPromptFromSelectionAction"
                 text="Build AI Prompt from Selection"
                 description="Build an AI prompt from selected code and copy it to clipboard">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+        
+        <action class="com.nikolicstefan.aicodecontext.ExplainSelectionAction"
+                id="com.nikolicstefan.aicodecontext.ExplainSelectionAction"
+                text="Explain Selection with Local AI"
+                description="Build an AI prompt from selected code,
+                send it to a local Ollama model and show the explanation">
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
         </action>
     </actions>
